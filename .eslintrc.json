@@ -1,0 +1,157 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "eslint-config-prettier",
+    "plugin:import/typescript"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 2020,
+    "sourceType": "module",
+    "tsconfigRootDir": "./"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {
+        "alwaysTryTypes": true
+      }
+    },
+    "react": {
+      "version": "detect"
+    }
+  },
+  "env": {
+    "browser": true,
+    "amd": true,
+    "node": true
+  },
+  "plugins": [
+    "@typescript-eslint",
+    "import",
+    "react",
+    "eslint-plugin-prettier"
+  ],
+  "rules": {
+    "prettier/prettier": ["error"],
+    "no-console": "off",
+    "no-undef": "off",
+    "import/no-named-as-default-member": "off",
+    "no-unused-vars": "off",
+    "no-else-return": "off",
+    "class-methods-use-this": "off",
+    "import/prefer-default-export": "off",
+    "import/default": "off",
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "react/display-name": "off",
+    "import/order": [
+      "error",
+      {
+        "pathGroups": [
+          {
+            "pattern": "react*",
+            "group": "builtin",
+            "position": "before"
+          },
+          {
+            "pattern": "@react*",
+            "group": "external",
+            "position": "before"
+          },
+          {
+            "pattern": "@styles",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@tools",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@types",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@static",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@configs",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@assets",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@images",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@/api",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@api",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@hooks",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@components",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@Feature",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@General",
+            "group": "internal",
+            "position": "before"
+          },
+          {
+            "pattern": "@Screen",
+            "group": "internal",
+            "position": "before"
+          }
+        ],
+        "groups": [
+          "builtin",
+          "external",
+          "internal",
+          "parent",
+          "sibling",
+          "index"
+        ],
+        "newlines-between": "always",
+        "alphabetize": {
+          "order": "asc",
+          "caseInsensitive": true
+        },
+        "pathGroupsExcludedImportTypes": ["react", "@react"]
+      }
+    ]
+  }
+}

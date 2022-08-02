@@ -1,0 +1,101 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "lib": [
+            "DOM",
+            "DOM.Iterable",
+            "ESNext"
+        ],
+        "allowJs": false,
+        "skipLibCheck": false,
+        "esModuleInterop": false,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "jsx": "react",
+        "baseUrl": "./",
+        "paths": {
+            "@api/*": [
+                "./src/api/*"
+            ],
+            "@components/*": [
+                "./src/components/*"
+            ],
+            "@configs/*": [
+                "./src/configs/*"
+            ],
+            "@hooks/*": [
+                "./src/hooks/*"
+            ],
+            "@styles/*": [
+                "./src/styles/*"
+            ],
+            "@types/*": [
+                "./src/types/*"
+            ],
+            "@actions/*": [
+                "./src/api/actions/*"
+            ],
+            "@Feature/*": [
+                "./src/components/Feature/*"
+            ],
+            "@General/*": [
+                "./src/components/General/*"
+            ],
+            "@Screen/*": [
+                "./src/components/Screen/*"
+            ],
+            "@store/*": [
+                "./src/hooks/store/*"
+            ],
+            "@/*": [
+                "./src/*"
+            ],
+            "@static/*": [
+                "./src/static/*"
+            ],
+            "@utils/*": [
+                "./src/utils/*"
+            ],
+            "@helper/*": [
+                "./src/helper/*"
+            ],
+            "@useOnEndReach/*": [
+                "./src/hooks/useOnEndReach/*"
+            ],
+            "@assets/*": [
+                "./src/assets/*"
+            ],
+            "@images/*": [
+                "./src/assets/images/*"
+            ],
+            "@useFileSourceHandler/*": [
+                "./src/hooks/useFileSourceHandler/*"
+            ],
+            "@tools/*": [
+                "./src/tools/*"
+            ],
+            "@usePagenationFn/*": [
+                "./src/hooks/usePagenationFn/*"
+            ],
+            "@useInfiniteScrollPagination/*": [
+                "./src/hooks/useInfiniteScrollPagination/*"
+            ],
+            "@temporary/*": [
+                "./src/temporary/*"
+            ]
+        }
+    },
+    "include": [
+        "./src",
+        "./**/*.d.ts"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
+}
